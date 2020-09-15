@@ -1,0 +1,18 @@
+---
+title: "List of R packages for Ecology"
+description: |
+ Here is a list (clearly incomplete) of R packages that are focused on Ecology!
+site: distill::distill_website
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = FALSE)
+
+# Learn more about creating websites with Distill at:
+# https://rstudio.github.io/distill/website.html
+
+# Learn more about publishing to GitHub Pages at:
+# https://rstudio.github.io/distill/publish_website.html#github-pages
+
+```
+
