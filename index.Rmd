@@ -42,12 +42,6 @@ comparison via time series plots and extreme value detection described by
 J.P. van Brakel <https://stackoverflow.com/questions/22583391/peak-signal-detection-inrealtime-timeseries-data/>.","volePhD") 
 
 
-pkgs_short[nrow(pkgs_short) + 1,]<-c("animaltracker"," Spatial-temporal analysis and visualisation of animal movement data","Utilities for spatial-temporal analysis and visualization of animal (e.g. cattle)
-tracking data. The core feature is a 'shiny' web application for customized processing
-of GPS logs, including features for data augmentation (e.g. elevation lookup), data selection,
-export, plotting, and statistical summaries. A data validation application allows for side-by-side
-comparison via time series plots and extreme value detection described by
-J.P. van Brakel <https://stackoverflow.com/questions/22583391/peak-signal-detection-inrealtime-timeseries-data/>.","volePhD") 
 
 pkgs_short[nrow(pkgs_short) + 1,]<-c("dismo"," Species distribution modelling","Functions for species distribution modeling, that is, predicting entire geographic distributions form occurrences at a number of sites and the environment at these sites","StatsForBios") 
 
@@ -79,12 +73,77 @@ The inspiration for this comes from users requesting a more seamless experience 
 
 BEWARE: In cases where you request data from multiple providers, especially when including GBIF, there could be duplicate records since many providers' data eventually ends up with GBIF. See ?spocc_duplicates, after installation, for more.","StatsForBios")
 
+
+pkgs_short[nrow(pkgs_short) + 1,]<-c("marked","Mark-Recapture Analysis for Survival and Abundance Estimation","Functions for fitting various models to capture-recapture data
+including mixed-effects Cormack-Jolly-Seber(CJS) and multistate models and
+the multi-variate state model structure for survival
+estimation and POPAN structured Jolly-Seber models for abundance estimation.
+There are also Hidden Markov model (HMM) implementations of CJS and multistate
+models with and without state uncertainty and a simulation capability for HMM
+models.","samdeanscience")
+
+pkgs_short[nrow(pkgs_short) + 1,]<-c("unmarked","Models for Data from Unmarked Animals","Fits hierarchical models of animal abundance and occurrence to data collected using survey methods such as point counts, site occupancy sampling, distance sampling, removal sampling, and double observer sampling. Parameters governing the state and observation processes can be modeled as functions of covariates.","samdeanscience")
+
+pkgs_short[nrow(pkgs_short) + 1,]<-c("Rmark","R Code for Mark Analysis","An interface to the software package MARK that constructs input files for MARK and extracts the output. MARK was developed by Gary White
+and is freely available at <http://www.phidot.org/software/mark/downloads/>
+but is not open source.","samdeanscience")
+
+pkgs_short[nrow(pkgs_short) + 1,]<-c("ctmm","Continuous-Time Movement Modeling","Functions for identifying, fitting, and applying continuous-space, continuoustime stochastic movement models to animal tracking data.
+The package is described in Calabrese et al (2016) <doi:10.1111/2041-
+210X.12559>, with models and methods based on those introduced in
+Fleming & Calabrese et al (2014) <doi:10.1086/675504>,
+Fleming et al (2014) <doi:10.1111/2041-210X.12176>,
+Fleming et al (2015) <doi:10.1103/PhysRevE.91.032107>,
+Fleming et al (2015) <doi:10.1890/14-2010.1>,
+Fleming et al (2016) <doi:10.1890/15-1607>,
+Péron & Fleming et al (2016) <doi:10.1186/s40462-016-0084-7>,
+Fleming & Calabrese (2017) <doi:10.1111/2041-210X.12673>,
+Péron et al (2017) <doi:10.1002/ecm.1260>,
+Fleming et al (2017) <doi:10.1016/j.ecoinf.2017.04.008>,
+Fleming et al (2018) <doi:10.1002/eap.1704>,
+Winner & Noonan et al (2018) <doi:10.1111/2041-210X.13027>,
+Fleming et al (2019) <doi:10.1111/2041-210X.13270>,
+and
+Noonan & Fleming et al (2019) <doi:10.1186/s40462-019-0177-1>.","taoofcoffee
+")
+
+
+pkgs_short[nrow(pkgs_short) + 1,]<-c("moveHMM","Animal Movement Modelling using Hidden Markov Models","Provides tools for animal movement modelling using hidden Markov
+models. These include processing of tracking data, fitting hidden Markov models
+to movement data, visualization of data and fitted model, decoding of the state
+process...
+","taoofcoffee
+")
+pkgs_short[nrow(pkgs_short) + 1,]<-c("adehabitat","Analysis of Habitat Selection by Animals","A collection of tools for the analysis of habitat selection by animals.","taoofcoffee")
+
+pkgs_short[nrow(pkgs_short) + 1,]<-c("landscapemetrics","Calculates landscape metrics for categorical landscape patterns in a tidy workflow.", "landscapemetrics reimplements the most common metrics from
+FRAGSTATS (<https://www.umass.edu/landeco/research/fragstats/fragstats.html>) and new ones from the current literature on landscape metrics.This package supports raster spatial objects and takes
+RasterLayer, RasterStacks, RasterBricks or lists of RasterLayer from the raster package as input arguments. It further provides utility functions
+to visualize patches, select metrics and building blocks to develop new
+metrics.","taoofcoffee")
+
+pkgs_short[nrow(pkgs_short) + 1,]<-c("amt","Animal Movement Tools","Manage and analyze animal movement data. The functionality of 'amt' includes methods to calculate track statistics (e.g. step lengths, speed, or turning angles), prepare data for fitting habitat selection analyses (resource selection functions and step-selection functions <doi:10.1890/04-
+0953> and integrated step-selection functions <doi:10.1111/2041-210X.12528>), and simulation of space-use from fitted step-selection functions <doi:10.1002/ecs2.1771>.","BenMMarshall")
+
+pkgs_short[nrow(pkgs_short) + 1,]<-c("adehabitatHR","Home Range Estimation","A collection of tools for the estimation of animals home range.","BenMMarshall")
+
+pkgs_short[nrow(pkgs_short) + 1,]<-c("momentuHMM","Maximum Likelihood Analysis of Animal Movement Behavior Using
+Multivariate Hidden Markov Models","Extended tools for analyzing telemetry data using generalized hidden Markov models. Features of momentuHMM (pronounced ``momentum'') include data pre-processing and visualization, fitting HMMs to location and auxiliary biotelemetry or environmental data, biased and correlated random walk movement models, hierarchical HMMs, multiple imputation for incorporating location measurement error and missing data, user-specified design matrices and constraints for covariate modelling of parameters, random effects, decoding of the state process, visualization of fitted models, model checking and selection, and simulation. See McClintock and Michelot (2018) <doi:10.1111/2041-210X.12995>","BenMMarshall")
+
+pkgs_short[nrow(pkgs_short) + 1,]<-c("recurse","Computes Revisitation Metrics for Trajectory Data
+","n Computes revisitation metrics for trajectory data, such as the number of revisitations for each location as well as the time spent for that visit and the time since the previous visit. Also includes functions to plot data.
+","BenMMarshall")
+
+
 ```
 
 
 ```{r, echo=FALSE}
-pkgs_short %>% 
-  kable() %>% 
-  kable_styling()
+#pkgs_short %>% select(Name) %>% 
+#  duplicated()
+# pkgs_short %>% 
+#   kable() %>% 
+#   kable_styling()
+DT::datatable(pkgs_short)
 ```
 
