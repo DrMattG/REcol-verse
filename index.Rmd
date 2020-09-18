@@ -131,9 +131,10 @@ pkgs_short[nrow(pkgs_short) + 1,]<-c("momentuHMM","Maximum Likelihood Analysis o
 Multivariate Hidden Markov Models","Extended tools for analyzing telemetry data using generalized hidden Markov models. Features of momentuHMM (pronounced ``momentum'') include data pre-processing and visualization, fitting HMMs to location and auxiliary biotelemetry or environmental data, biased and correlated random walk movement models, hierarchical HMMs, multiple imputation for incorporating location measurement error and missing data, user-specified design matrices and constraints for covariate modelling of parameters, random effects, decoding of the state process, visualization of fitted models, model checking and selection, and simulation. See McClintock and Michelot (2018) <doi:10.1111/2041-210X.12995>","BenMMarshall")
 
 pkgs_short[nrow(pkgs_short) + 1,]<-c("recurse","Computes Revisitation Metrics for Trajectory Data
-","n Computes revisitation metrics for trajectory data, such as the number of revisitations for each location as well as the time spent for that visit and the time since the previous visit. Also includes functions to plot data.
+","Computes revisitation metrics for trajectory data, such as the number of revisitations for each location as well as the time spent for that visit and the time since the previous visit. Also includes functions to plot data.
 ","BenMMarshall")
 
+pkgs_short[nrow(pkgs_short) + 1,]<-c("MLWIC2","Machine Learning for Wildlife Image Classification","MLWIC2 can be used to automatically classify camera trap images or to train new models for image classification, it contains two pre-trained models: the species_model identifies 58 species and empty images, and the empty_animal model distinguishes between images with animals and those that are empty. MLWIC2 also contains Shiny apps for running the functions. These can be accessed using runShiny. In the steps below, you can see Shiny options for some steps. This indicates that you can run these steps with Shiny apps by running the function provied. Note that when you are using Shiny apps to select directories and files, you can only navigate using the top part half of the screen and you must scroll to the bottom of the window to find the Select button.","Thorbjörn Sievert")
 
 ```
 
