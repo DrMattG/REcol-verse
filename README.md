@@ -6,3 +6,5 @@ Here is a list (https://drmattg.github.io/REcol-verse/) of R packages that are f
 
 * Develop a shinyApp to facilitate freetext searches of package name and description
 
+#### Please cite this list as: 
+Grainger, MJ & Gray, RJ: 2021. REcol-verse - a list of R Packages for Ecology, Evolution and Wildlife Sciences 10.6084/m9.figshare.14204228
