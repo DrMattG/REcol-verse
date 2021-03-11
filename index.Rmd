@@ -138,6 +138,18 @@ pkgs_short[nrow(pkgs_short) + 1,]<-c("MLWIC2","Machine Learning for Wildlife Ima
 
 ```
 
+```{r add All Ecology Packages, echo=FALSE}
+AllEcologyPackages <-readxl::read_excel("data/AllEcologyPackages.xlsx")
+#names(pkgs_short)
+names(AllEcologyPackages)<-c("Name", "Short Description", "Long Description")
+AllEcologyPackages$Source="Russell Gray"
+
+pkgs_short<-rbind(pkgs_short,AllEcologyPackages)
+
+pkgs_short=pkgs_short %>% 
+  distinct()
+```
+
 
 ```{r, echo=FALSE}
 #pkgs_short %>% select(Name) %>% 
