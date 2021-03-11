@@ -147,7 +147,8 @@ AllEcologyPackages$Source="Russell Gray"
 pkgs_short<-rbind(pkgs_short,AllEcologyPackages)
 
 pkgs_short=pkgs_short %>% 
-  distinct(Name, .keep_all = TRUE)
+  distinct(Name, .keep_all = TRUE)%>% drop_na
+
 ```
 
 
