@@ -136,6 +136,10 @@ pkgs_short[nrow(pkgs_short) + 1,]<-c("recurse","Computes Revisitation Metrics fo
 
 pkgs_short[nrow(pkgs_short) + 1,]<-c("MLWIC2","Machine Learning for Wildlife Image Classification","MLWIC2 can be used to automatically classify camera trap images or to train new models for image classification, it contains two pre-trained models: the species_model identifies 58 species and empty images, and the empty_animal model distinguishes between images with animals and those that are empty. MLWIC2 also contains Shiny apps for running the functions. These can be accessed using runShiny. In the steps below, you can see Shiny options for some steps. This indicates that you can run these steps with Shiny apps by running the function provied. Note that when you are using Shiny apps to select directories and files, you can only navigate using the top part half of the screen and you must scroll to the bottom of the window to find the Select button.","Thorbjörn Sievert")
 
+
+pkgs_short[nrow(pkgs_short) + 1,]<-c("ade4","Analysis of Ecological Data: Exploratory and Euclidean Methods
+in Environmental Sciences","Tools for multivariate data analysis. Several methods are provided for the analysis (i.e., ordination) of one-table (e.g., principal component analysis, correspondence analysis), two-table (e.g., coinertia analysis, redundancy analysis), three-table (e.g., RLQ analysis) and K-table (e.g., STATIS, multiple coinertia analysis). The philosophy of the package is described in Dray and Dufour (2007) <doi:10.18637/jss.v022.i04>.","Pedro Peres-Neto (@com_ecology)")
+
 ```
 
 ```{r add All Ecology Packages, echo=FALSE}
