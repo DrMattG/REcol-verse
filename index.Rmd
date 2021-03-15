@@ -163,6 +163,8 @@ pkgs_short=pkgs_short %>%
 ```
 
 
+*We currently have `r dim(pkgs_short)[1]` packages listed.*
+
 ```{r, echo=FALSE}
 #pkgs_short %>% select(Name) %>% 
 #  duplicated()
