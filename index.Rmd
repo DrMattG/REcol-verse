@@ -140,6 +140,12 @@ pkgs_short[nrow(pkgs_short) + 1,]<-c("MLWIC2","Machine Learning for Wildlife Ima
 pkgs_short[nrow(pkgs_short) + 1,]<-c("ade4","Analysis of Ecological Data: Exploratory and Euclidean Methods
 in Environmental Sciences","Tools for multivariate data analysis. Several methods are provided for the analysis (i.e., ordination) of one-table (e.g., principal component analysis, correspondence analysis), two-table (e.g., coinertia analysis, redundancy analysis), three-table (e.g., RLQ analysis) and K-table (e.g., STATIS, multiple coinertia analysis). The philosophy of the package is described in Dray and Dufour (2007) <doi:10.18637/jss.v022.i04>.","Pedro Peres-Neto (@com_ecology)")
 
+pkgs_short[nrow(pkgs_short) + 1,]<-c("rdacca.hp","Hierarchical and Variation Partitioning for Canonical Analysis","This function conducts variation partitioning and hierarchical partitioning to calculate the unique, shared (referred as to ``common'') and independent contributions of each predictor (or matrix) to explained variation (R-squared and adjusted R-squared) on canonical analysis (RDA,CCA and db-RDA), applying the hierarchy algorithm of Chevan, A. and Sutherland, M. 1991 Hierarchical Partitioning.The American Statistician, 90-
+96 <DOI:10.1080/00031305.1991.10475776>.
+","Jiangshan Lai")
+
+
+
 ```
 
 ```{r add All Ecology Packages, echo=FALSE}
