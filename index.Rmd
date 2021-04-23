@@ -160,6 +160,30 @@ pkgs_short=pkgs_short %>%
 
 ```
 
+```{r add Ornitho Packages, echo=FALSE}
+Ornitho <- readRDS(paste0(here::here(),"/data/Ornitho.RDS"))
+# Find which packages are missing
+missing=data.frame(Name=Ornitho[!tolower(Ornitho$Name) %in%tolower(pkgs_short$Name),])
+
+# Set up data frame
+missing$Name=as.character(missing$Name)
+missing$`Short Description`=NA
+missing$`Long Description`=NA
+missing$Source="beausoleilmo"
+
+for (i in 1:length(missing$Name)){
+  missing$`Short Description`[i]=utils::packageDescription(missing$Name[i])$Title
+  missing$`Long Description`[i]=utils::packageDescription(missing$Name[i])$Description
+}
+
+pkgs_short<-rbind(pkgs_short,missing)
+
+pkgs_short=pkgs_short %>% 
+  distinct(Name, .keep_all = TRUE)%>% drop_na()
+
+                   
+```
+
 
 *We currently have `r dim(pkgs_short)[1]` packages listed.*
 
